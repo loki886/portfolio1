@@ -18,6 +18,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
 
@@ -105,6 +106,25 @@
             flex: 1 1 calc(50% - 10px);
         }
 
+        /* Index Button */
+        .index-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #5e4ea2;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .index-btn:hover {
+            background: #6f5bb5;
+        }
+
         @media (max-width: 920px) {
             .resume {
                 flex-direction: column;
@@ -128,7 +148,7 @@
     <div class="resume">
         <!-- Sidebar with Photo -->
         <div class="sidebar">
-            <img src="C:\Users\E-LIBRARY\23g204\loki.jpeg" alt="S. Lokesh">
+            <img src="profile.jpg" alt="S. Lokesh">
             <h1>S. Lokesh</h1>
             <p><strong>Web Developer | UI/UX Enthusiast | Content Creator</strong></p>
             <p><strong>Email:</strong> <a href="mailto:sloki2999@gmail.com">sloki2999@gmail.com</a></p>
@@ -175,11 +195,14 @@
                     <li>3D Web Development</li>
                     <li>Wearable Tech & Robotics</li>
                     <li>Bodybuilding & Budget Nutrition</li>
-                    <li>sports - athletics</li>
+                    <li>Sports - Athletics</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <!-- Index Button -->
+    <a href="index.html" class="index-btn">⬅ Back to Portfolio</a>
 
 </body>
 </html>
